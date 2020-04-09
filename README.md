@@ -16,19 +16,19 @@
 - Create a collection in Postman called `200409`
 
 
-- Create a get method that sends the string `[PLANT_ID] has been accessed via get request` at the path `localhost:8000/flowers/successMessage/[PLANT_ID]`
+- Create a get method that sends the string `Flower [PLANT_ID] has been accessed via get request` at the path `localhost:8000/flowers/successMessage/[PLANT_ID]`
 - Create, test, and save route in 200409 Postman collection
 
 
-- Create a post method that send the string `[PLANT_ID] has been accessed via post request` at the path `localhost:8000/flowers/successMessage/[PLANT_ID]`
+- Create a post method that send the string `Flower [PLANT_ID] has been accessed via post request` at the path `localhost:8000/flowers/successMessage/[PLANT_ID]`
 - Create, test, and save route in 200409 Postman collection
 
 
-- Create a get method that sends the string `[PLANT_ID] has been accessed via get request` at the path `localhost:8000/trees/successMessage/[USERNAME]`
+- Create a get method that sends the string `Tree [PLANT_ID] has been accessed via get request` at the path `localhost:8000/trees/successMessage/[PLANT_ID]`
 - Create, test, and save route in 200409 Postman collection
 
 
-- Create a post method that send the string `[PLANT_ID] has been accessed via post request` at the path `localhost:8000/trees/successMessage/[USERNAME]`
+- Create a post method that send the string `Tree [PLANT_ID] has been accessed via post request` at the path `localhost:8000/trees/successMessage/[PLANT_ID]`
 - Create, test, and save route in 200409 Postman collection
 
 ### Express Router
@@ -45,6 +45,6 @@
 
 #### Updating the entry point file
 - Import the flower and tree router modules at the top of the entry point file using this syntax
-    - `let MODULE_NAME = require('./MODULE_NAME.js');`
+    - `let MODULE_NAME = require('./router/MODULE_NAME.js');`
 - Add the routing middleware for each module using this syntax
     - `app.use('/PATH_NAME', MODULE_NAME);`
