@@ -34,8 +34,9 @@
 ### Express Router
 `express.Router` middleware as it allows us to group the route handlers for a particular part of a site together and access them using a common route-prefix.
 #### Reorganizing your existing routes to route modules
-- Create a JS file called `flowers.js` to hold flowers routes
-- Create a JS file called `trees.js` to hold plants routes
+- Create a directory called `routes`
+- In the `routes` directory create a JS file called `flowers.js` to hold flowers routes
+- In the `routes` directory create a JS file called `trees.js` to hold plants routes
 - Move routes from `index.js` to appropriate JS files and remove the `trees` or `flowers` part of the path
 - Add `let express = require('express');` and `let router = express.Router();` to the top of each file
 - Replace `app` with `router` for the routes in each file
